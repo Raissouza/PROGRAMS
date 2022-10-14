@@ -1,0 +1,26 @@
+#include <stdio.h>
+#include <math.h>
+
+	main (){
+		
+		int a, b, c, menor;
+		
+		printf ("Digite um numero inteiro: ");
+		scanf ("%d", &a);
+		printf ("Digite um numero inteiro: ");
+		scanf ("%d", &b);	
+		printf ("Digite um numero inteiro: ");
+		scanf ("%d", &c);
+		
+	if ( a < b && a <c) {
+		menor = a;
+	} else if (b < c) {
+		menor = b;
+	} else {
+		menor = c;
+	}
+	 
+	 printf ("O menor numero entre eles eh: %d\n", menor);
+	 
+	 return 0;
+	}
