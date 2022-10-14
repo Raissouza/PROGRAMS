@@ -1,0 +1,25 @@
+#include <stdio.h> // Programa que lê dois valores inteiros em qualquer ordem e calcula a soma dos numeros impares entre eles
+
+main (){
+	
+	int X, Y, SOMA, TROCA, i;
+	
+	printf ("Digite dois numeros: \n");
+	scanf ("%d %d", &X, &Y);
+	
+	if (X > Y){ // Se a Variável X for maior que a variável Y, trocaremos elas de lugar.
+		TROCA = X;
+		X = Y;
+		Y = TROCA;
+	}
+	
+	SOMA = 0;
+	for (i = X+1; i < Y; i++){
+		if (i % 2 != 0){ //Se o resto da divisão de i por 2 for diferente de zero, o número é impar.
+		SOMA = SOMA + i; // Então a Soma será:
+	}
+}
+
+	printf ("SOMA DOS IMPARES= %d\n", SOMA);
+	return 0;
+}
