@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+main (){
+	
+	float largura, comprimento, metroQuadrado, area, preco;
+	
+	printf ("Digite a largura do terreno: ");
+	scanf ("%.1f", &largura);
+	printf ("\nDigite o comprimento do terreno: ");
+	scanf ("%.1f", &comprimento);
+	printf ("\nDigite o valor do Metro Quadrado: ");
+	scanf ("%.2f", &metroQuadrado);
+	
+	area = largura * comprimento;
+	preco = area * 2;
+	
+	printf ("\nArea do terreno: ");
+	scanf ("%.2f", &area);
+	printf ("\nPreço do terreno: ");
+	scanf ("%.2f", &preco);
+	
+}
