@@ -1,0 +1,27 @@
+//Crie um programa que calcule o fatorial de um numero utilizando recursão
+#include <stdio.h>
+
+
+
+   int fatorial_x(int x){
+
+
+
+   if (x==0 || x==1){
+    
+    return 1;
+}
+    else return x*fatorial_x(x-1);
+        
+    }
+int main (){
+    int x, fatorial;
+    printf ("Programa para calcular fatorial: \n");
+    printf ("Digite um numero: \n");
+    scanf ("%d", &x);
+    
+    fatorial = fatorial_x(x);
+    
+    printf ("O fatorial de %d eh %d\n", x, fatorial);
+    
+}
